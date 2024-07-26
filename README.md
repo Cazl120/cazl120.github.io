@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Cazl120's Homepage</title>
+    <title>chordbeet's Homepage</title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" type="image/x-icon" href="../images/panda.ico" />
     <meta
@@ -9,8 +9,8 @@
     />
     <meta content="Cazl120's Homepage" property="og:title" />
     <meta content="Stuff" property="og:description" />
-    <meta content="https://cazl120.me" property="og:url" />
-    <meta content="https://cazl120.me/images/panda.ico" property="og:image" />
+    <meta content="https://chordbeet.co.uk" property="og:url" />
+    <meta content="https://chordbeet.co.uk/images/panda.ico" property="og:image" />
     <meta content="#8eedf0" data-react-helmet="true" name="theme-color" />
   </head>
   <script src="scripts.js"></script>
