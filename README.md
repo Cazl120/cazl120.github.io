@@ -16,25 +16,6 @@
   <script src="scripts.js"></script>
   <link rel="stylesheet" href="styles.css" />
   <body>
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="/login/">Login</a>
-      <a href="#contact">Contact</a>
-      <div class="dropdown">
-        <button class="dropbtn">
-          Dropdown
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"
-        >&#9776;</a
-      >
-    </div>
+    <iframe width="1200" height="700" title="Panorama Viewer" scrolling="no" src="https://renderstuff.com/tools/360-panorama-web-viewer-embed/?image=https://chordbeet.co.uk/home/Panorama1.jpg"></iframe>
   </body>
 </html>
