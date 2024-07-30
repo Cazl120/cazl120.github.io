@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
-    <meta content="Cazl120's Homepage" property="og:title" />
+    <meta content="chordbeet" property="og:title" />
     <meta content="Stuff" property="og:description" />
     <meta content="https://chordbeet.co.uk" property="og:url" />
     <meta content="https://chordbeet.co.uk/images/panda.ico" property="og:image" />
