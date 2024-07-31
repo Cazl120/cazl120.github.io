@@ -1,69 +1,100 @@
 <!DOCTYPE HTML>
-<html>  
+<html>
 <head>
-    <title>Panorama Tour</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <style>
-    	#panorama {
-        	width: 600px;
-        	height: 400px;
-    	}
+    #panorama {
+        width: 900px;
+        height: 600px;
+    }
     </style>
 </head>
 <body>
-	
+
 <div id="panorama"></div>
 <script>
-pannellum.viewer('panorama', {
-	"default: {
-		"firstScene": "living",
-		"sceneFadeDuration": 1000,
-    	},
+pannellum.viewer('panorama', {   
+    "default": {
+        "firstScene": "living",
+        "sceneFadeDuration": 1000,
+	"autoLoad": true,
+	"autoRotate": -2,
+	"autoRotateInactivityDelay": 30000,
+    },
 
-	"scenes": {
-        	"living": {
-            		"title": "Living Room",
-            		"hfov": 110,
-            		"pitch": -3,
-            		"yaw": 117,
-            		"type": "equirectangular",
-            		"panorama": "https://chordbeet.co.uk/home/Panorama1.jpg",
-            		"hotSpots": [
-                	      {
-                    		"pitch": -2.1,
-                    		"yaw": 132.9,
-                    		"type": "scene",
-                    		"text": "Kitchen",
-                    		"sceneId": "kitchen"
-                	      }
-            		]
-        	},
-		
-		"kitchen": {
-            		"title": "Kitchen",
-            		"hfov": 110,
-            		"yaw": 5,
-            		"type": "equirectangular",
-            		"panorama": "https://chordbeet.co.uk/home/Panorama3.jpg",
-            		"hotSpots": [
-                	      {
-                    		"pitch": -0.6,
-                    		"yaw": 37.1,
-                    		"type": "scene",
-                    		"text": "Living Room",
-                    		"sceneId": "living",
-                    		"targetYaw": -23,
-                    		"targetPitch": 2
-                	      }
-            		]
-        	}
-    	}
+    "scenes": {
+        "living": {
+            "hfov": 97,
+            "yaw": -15,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama1.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -21.1,
+                    "yaw": 110.3,
+                    "type": "scene",
+                    "text": "Kitchen",
+                    "sceneId": "kitchen"
+                },
+		{
+                    "pitch": -12.9,
+                    "yaw": -33.5,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed1"
+                }
+            ]
+        },
+
+        "kitchen": {
+            "hfov": 97,
+            "yaw": -45,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama3.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -19,
+                    "yaw": -48.2,
+                    "type": "scene",
+                    "text": "Living Room",
+                    "sceneId": "living"
+                },
+		{
+                    "pitch": -7.7,
+                    "yaw": -38.6,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed1"
+                }
+            ]
+        },
+	"bed1": {
+            "hfov": 97,
+            "yaw": 120,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama4.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -12.7,
+                    "yaw": 150.8,
+                    "type": "scene",
+                    "text": "Living Room",
+                    "sceneId": "living"
+                },
+		{
+                    "pitch": -7.4,
+                    "yaw": 136,
+                    "type": "scene",
+                    "text": "Kitchen",
+                    "sceneId": "kitchen"
+                }
+            ]
+        }
+    }
 });
 </script>
 
