@@ -8,8 +8,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <style>
     #panorama {
-        width: 900px;
-        height: 600px;
+        width: 600px;
+        height: 400px;
     }
     </style>
 </head>
@@ -38,7 +38,7 @@ pannellum.viewer('panorama', {
                     "pitch": -21.1,
                     "yaw": 110.3,
                     "type": "scene",
-                    "text": "Kitchen",
+                    "text": "Kitchen/Dining",
                     "sceneId": "kitchen"
                 },
 		{
@@ -47,7 +47,14 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Bedroom",
                     "sceneId": "bed1"
-                }
+                },
+		{
+                    "pitch": -12.4,
+                    "yaw": -15.4,
+                    "type": "scene",
+                    "text": "Bathroom",
+                    "sceneId": "bath1"
+                },
             ]
         },
 
@@ -71,7 +78,7 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Bedroom",
                     "sceneId": "bed1"
-                }
+                },
             ]
         },
 	"bed1": {
@@ -92,9 +99,39 @@ pannellum.viewer('panorama', {
                     "pitch": -7.4,
                     "yaw": 136,
                     "type": "scene",
-                    "text": "Kitchen",
+                    "text": "Kitchen/Dining",
                     "sceneId": "kitchen"
+                },
+		{
+                    "pitch": -26.4,
+                    "yaw": 48.3,
+                    "type": "scene",
+                    "text": "Bathroom",
+                    "sceneId": "bath1"
                 }
+            ]
+        },
+	"bath1": {
+            "hfov": 95,
+            "yaw": 0,
+	    "pitch": -15,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama2.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -31,
+                    "yaw": 3.6,
+                    "type": "scene",
+                    "text": "Living Room",
+                    "sceneId": "living"
+                },
+		{
+                    "pitch": -36.3,
+                    "yaw": 52.6,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed1"
+                },
             ]
         }
     }
