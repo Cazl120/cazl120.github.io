@@ -1,28 +1,71 @@
-  <head>
-    <title>chordbeet's Homepage</title>
+<!DOCTYPE HTML>
+<html>  
+<head>
+    <title>Panorama Tour</title>
     <meta charset="utf-8" />
-    <link rel="shortcut icon" type="image/x-icon" href="../images/panda.ico" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      content="width=device-width, initial-scale=1.0"
     />
-    <meta content="Cazl120's Homepage" property="og:title" />
-    <meta content="Stuff" property="og:description" />
-    <meta content="https://chordbeet.co.uk" property="og:url" />
-    <meta content="https://chordbeet.co.uk/images/panda.ico" property="og:image" />
-    <meta content="#8eedf0" data-react-helmet="true" name="theme-color" />
-  </head>
-  <script src="scripts.js"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <body>
-   <div class="twinmotion-embed-wrapper">
-    <iframe style="height: 100%; width: 100%; min-height: 375px; min-width: 375px;"
-    title="Embedded panorama 'Panorama Set1'" frameborder="0"
-    allow="fullscreen; gyroscope; accelerometer; magnetometer; execution-while-out-of-viewport; execution-while-not-rendered; xr-spatial-tracking;"
-    allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
-    src="https://twinmotion.unrealengine.com/panorama/0P8CqRKO1P0Z0v9H?embed"
-    >
-    </iframe>
- </div>
-  </body>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    	#panorama {
+        	width: 600px;
+        	height: 400px;
+    	}
+    </style>
+</head>
+<body>
+	
+<div id="panorama"></div>
+<script>
+pannellum.viewer('panorama', {
+	"default: {
+		"firstScene": "living",
+		"sceneFadeDuration": 1000,
+    	},
+
+	"scenes": {
+        	"living": {
+            		"title": "Living Room",
+            		"hfov": 110,
+            		"pitch": -3,
+            		"yaw": 117,
+            		"type": "equirectangular",
+            		"panorama": "https://chordbeet.co.uk/home/Panorama1.jpg",
+            		"hotSpots": [
+                	      {
+                    		"pitch": -2.1,
+                    		"yaw": 132.9,
+                    		"type": "scene",
+                    		"text": "Kitchen",
+                    		"sceneId": "kitchen"
+                	      }
+            		]
+        	},
+		
+		"kitchen": {
+            		"title": "Kitchen",
+            		"hfov": 110,
+            		"yaw": 5,
+            		"type": "equirectangular",
+            		"panorama": "https://chordbeet.co.uk/home/Panorama3.jpg",
+            		"hotSpots": [
+                	      {
+                    		"pitch": -0.6,
+                    		"yaw": 37.1,
+                    		"type": "scene",
+                    		"text": "Living Room",
+                    		"sceneId": "living",
+                    		"targetYaw": -23,
+                    		"targetPitch": 2
+                	      }
+            		]
+        	}
+    	}
+});
+</script>
+
+</body>
 </html>
