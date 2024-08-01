@@ -24,6 +24,7 @@ pannellum.viewer('panorama', {
 	"autoLoad": true,
 	"autoRotate": 0,
 	"autoRotateInactivityDelay": 30000,
+    //"hotSpotDebug": true,
     },
 
     "scenes": {
@@ -134,6 +135,20 @@ pannellum.viewer('panorama', {
                     "text": "Dining",
                     "sceneId": "dining"
                 },
+                {
+                    "pitch": -23,
+                    "yaw": 126.8,
+                    "type": "scene",
+                    "text": "Snug",
+                    "sceneId": "snug"
+                },
+                {
+                    "pitch": -21.2,
+                    "yaw": -153.3,
+                    "type": "scene",
+                    "text": "Bathroom",
+                    "sceneId": "bath2"
+                },
             ]
         },
         
@@ -159,6 +174,13 @@ pannellum.viewer('panorama', {
                     "text": "Kitchen/Dining",
                     "sceneId": "kitchen"
                 },
+                {
+                    "pitch": -11.7,
+                    "yaw": 21.1,
+                    "type": "scene",
+                    "text": "Snug",
+                    "sceneId": "snug"
+                },
             ]
         },
 
@@ -178,8 +200,33 @@ pannellum.viewer('panorama', {
                     "sceneId": "kitchen"
                 },
 		        {
-                    "pitch": -15,
-                    "yaw": 179,
+                    "pitch": -34.4,
+                    "yaw": 171.6,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed2"
+                },
+            ]
+        },
+
+        "snug": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama11.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -19.1,
+                    "yaw": -123.6,
+                    "type": "scene",
+                    "text": "Kitchen/Dining",
+                    "sceneId": "kitchen"
+                },
+		        {
+                    "pitch": -21,
+                    "yaw": -34.6,
                     "type": "scene",
                     "text": "Bedroom",
                     "sceneId": "bed2"
@@ -196,15 +243,22 @@ pannellum.viewer('panorama', {
             //"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -15,
-                    "yaw": -168.3,
+                    "pitch": -6.7,
+                    "yaw": -185.8,
                     "type": "scene",
                     "text": "Snug",
                     "sceneId": "snug"
                 },
+                {
+                    "pitch": -21.8,
+                    "yaw": -205.7,
+                    "type": "scene",
+                    "text": "Dining Room",
+                    "sceneId": "dining"
+                },
 		        {
-                    "pitch": -15,
-                    "yaw": -118.7,
+                    "pitch": -26.5,
+                    "yaw": -252.3,
                     "type": "scene",
                     "text": "Bathroom",
                     "sceneId": "bath2"
@@ -226,6 +280,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Bedroom",
                     "sceneId": "bed2"
+                },
+                {
+                    "pitch": -18.4,
+                    "yaw": -89.2,
+                    "type": "scene",
+                    "text": "Kitchen/Dining",
+                    "sceneId": "kitchen"
                 },
             ]
         },
