@@ -22,14 +22,14 @@ pannellum.viewer('panorama', {
         "firstScene": "living",
         "sceneFadeDuration": 500,
 	"autoLoad": true,
-	"autoRotate": -2,
+	"autoRotate": 0,
 	"autoRotateInactivityDelay": 30000,
     },
 
     "scenes": {
         "living": {
             "hfov": 90,
-            "yaw": -15,
+            "yaw": 12,
 	    "pitch": -15,
             "type": "equirectangular",
             "panorama": "https://chordbeet.co.uk/home/Panorama1.jpg",
@@ -39,8 +39,15 @@ pannellum.viewer('panorama', {
                     "pitch": -21.1,
                     "yaw": 110.3,
                     "type": "scene",
-                    "text": "Kitchen/Dining",
+                    "text": "Dining Room",
                     "sceneId": "kitchen"
+                },
+                {
+                    "pitch": -23,
+                    "yaw": 72.6,
+                    "type": "scene",
+                    "text": "Kitchen",
+                    "sceneId": "kitch2"
                 },
 		        {
                     "pitch": -12.9,
@@ -56,12 +63,51 @@ pannellum.viewer('panorama', {
                     "text": "Bathroom",
                     "sceneId": "bath1"
                 },
+                {
+                    "pitch": -13.3,
+                    "yaw": 11.4,
+                    "type": "scene",
+                    "text": "Study",
+                    "sceneId": "study"
+                },
+            ]
+        },
+
+        "study": {
+            "hfov": 90,
+            "yaw": 140,
+	    "pitch": -15,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama6.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+		        {
+                    "pitch": -26.6,
+                    "yaw": -130,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed1"
+                },
+		        {
+                    "pitch": -17.6,
+                    "yaw": -224,
+                    "type": "scene",
+                    "text": "Living room",
+                    "sceneId": "living"
+                },
+                {
+                    "pitch": -27.9,
+                    "yaw": -113,
+                    "type": "scene",
+                    "text": "Bathroom",
+                    "sceneId": "bath1"
+                },
             ]
         },
 
         "kitchen": {
             "hfov": 90,
-            "yaw": -90,
+            "yaw": -20,
 	    "pitch": -10,
             "type": "equirectangular",
             "panorama": "https://chordbeet.co.uk/home/Panorama3.jpg",
@@ -75,15 +121,116 @@ pannellum.viewer('panorama', {
                     "sceneId": "living"
                 },
 		        {
-                    "pitch": -7.7,
-                    "yaw": -38.6,
+                    "pitch": -13,
+                    "yaw": -2,
                     "type": "scene",
-                    "text": "Bedroom",
-                    "sceneId": "bed1"
+                    "text": "Kitchen",
+                    "sceneId": "kitch2"
+                },
+                {
+                    "pitch": -21.3,
+                    "yaw": -193.7,
+                    "type": "scene",
+                    "text": "Snug",
+                    "sceneId": "snug"
                 },
             ]
         },
-	"bed1": {
+        
+        "kitch2": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama7.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -11.2,
+                    "yaw": -0.2,
+                    "type": "scene",
+                    "text": "Snug",
+                    "sceneId": "snug"
+                },
+		        {
+                    "pitch": -20.3,
+                    "yaw": 9.1,
+                    "type": "scene",
+                    "text": "Dining Room",
+                    "sceneId": "kitchen"
+                },
+            ]
+        },
+
+        "snug": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama8.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -21.5,
+                    "yaw": 12.2,
+                    "type": "scene",
+                    "text": "Dining Room",
+                    "sceneId": "kitchen"
+                },
+		        {
+                    "pitch": -15,
+                    "yaw": 179,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed2"
+                },
+            ]
+        },
+
+        "bed2": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama9.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": -168.3,
+                    "type": "scene",
+                    "text": "Snug",
+                    "sceneId": "snug"
+                },
+		        {
+                    "pitch": -15,
+                    "yaw": -118.7,
+                    "type": "scene",
+                    "text": "Bathroom",
+                    "sceneId": "bath2"
+                },
+            ]
+        },
+
+        "bath2": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama10.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": -0.8,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed2"
+                },
+            ]
+        },
+
+	    "bed1": {
             "hfov": 90,
             "yaw": 40,
 	    "pitch": -12,
@@ -92,18 +239,18 @@ pannellum.viewer('panorama', {
             //"hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -12.7,
-                    "yaw": 150.8,
+                    "pitch": -34,
+                    "yaw": 104,
                     "type": "scene",
                     "text": "Living Room",
                     "sceneId": "living"
                 },
 		        {
-                    "pitch": -7.4,
-                    "yaw": 136,
+                    "pitch": -15.8,
+                    "yaw": 101,
                     "type": "scene",
-                    "text": "Kitchen/Dining",
-                    "sceneId": "kitchen"
+                    "text": "Study",
+                    "sceneId": "study"
                 },
 		        {
                     "pitch": -26.4,
