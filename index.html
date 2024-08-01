@@ -33,6 +33,7 @@ pannellum.viewer('panorama', {
 	    "pitch": -15,
             "type": "equirectangular",
             "panorama": "https://chordbeet.co.uk/home/Panorama1.jpg",
+            //"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -21.1,
@@ -41,14 +42,14 @@ pannellum.viewer('panorama', {
                     "text": "Kitchen/Dining",
                     "sceneId": "kitchen"
                 },
-		{
+		        {
                     "pitch": -12.9,
                     "yaw": -33.5,
                     "type": "scene",
                     "text": "Bedroom",
                     "sceneId": "bed1"
                 },
-		{
+		        {
                     "pitch": -12.4,
                     "yaw": -15.4,
                     "type": "scene",
@@ -64,6 +65,7 @@ pannellum.viewer('panorama', {
 	    "pitch": -10,
             "type": "equirectangular",
             "panorama": "https://chordbeet.co.uk/home/Panorama3.jpg",
+            //"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -19,
@@ -72,7 +74,7 @@ pannellum.viewer('panorama', {
                     "text": "Living Room",
                     "sceneId": "living"
                 },
-		{
+		        {
                     "pitch": -7.7,
                     "yaw": -38.6,
                     "type": "scene",
@@ -87,6 +89,7 @@ pannellum.viewer('panorama', {
 	    "pitch": -12,
             "type": "equirectangular",
             "panorama": "https://chordbeet.co.uk/home/Panorama4.jpg",
+            //"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -12.7,
@@ -95,20 +98,27 @@ pannellum.viewer('panorama', {
                     "text": "Living Room",
                     "sceneId": "living"
                 },
-		{
+		        {
                     "pitch": -7.4,
                     "yaw": 136,
                     "type": "scene",
                     "text": "Kitchen/Dining",
                     "sceneId": "kitchen"
                 },
-		{
+		        {
                     "pitch": -26.4,
                     "yaw": 48.3,
                     "type": "scene",
                     "text": "Bathroom",
                     "sceneId": "bath1"
-                }
+                },
+                {
+                    "pitch": -25,
+                    "yaw": 33,
+                    "type": "scene",
+                    "text": "Wardrobe",
+                    "sceneId": "wrdrb"
+                },
             ]
         },
 	"bath1": {
@@ -117,6 +127,7 @@ pannellum.viewer('panorama', {
 	    "pitch": -15,
             "type": "equirectangular",
             "panorama": "https://chordbeet.co.uk/home/Panorama2.jpg",
+            //"hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": -31,
@@ -125,9 +136,33 @@ pannellum.viewer('panorama', {
                     "text": "Living Room",
                     "sceneId": "living"
                 },
-		{
+		        {
                     "pitch": -36.3,
                     "yaw": 52.6,
+                    "type": "scene",
+                    "text": "Bedroom",
+                    "sceneId": "bed1"
+                },
+            ]
+        },
+        "wrdrb": {
+            "hfov": 95,
+            "yaw": 0,
+	    "pitch": -15,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama5.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -28.7,
+                    "yaw": 14.8,
+                    "type": "scene",
+                    "text": "Bathroom",
+                    "sceneId": "bath1"
+                },
+		        {
+                    "pitch": -38.3,
+                    "yaw": 16.6,
                     "type": "scene",
                     "text": "Bedroom",
                     "sceneId": "bed1"
