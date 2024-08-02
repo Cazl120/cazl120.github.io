@@ -22,9 +22,9 @@ pannellum.viewer('panorama', {
         "firstScene": "living",
         "sceneFadeDuration": 600,
 	"autoLoad": true,
-	"autoRotate": 2,
-	"autoRotateInactivityDelay": 30000,
-    //"hotSpotDebug": true,
+	//"autoRotate": 2,
+	//"autoRotateInactivityDelay": 30000,
+    "hotSpotDebug": true,
     },
 
     "scenes": {
@@ -148,6 +148,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Snug",
                     "sceneId": "snug"
+                },
+                {
+                    "pitch": -14.3,
+                    "yaw": 117.8,
+                    "type": "scene",
+                    "text": "Utility",
+                    "sceneId": "utility"
                 },
             ]
         },
@@ -287,6 +294,191 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Kitchen/Dining",
                     "sceneId": "kitchen"
+                },
+                {
+                    "pitch": -14.8,
+                    "yaw": 136.2,
+                    "type": "scene",
+                    "text": "Front Door",
+                    "sceneId": "frontdr"
+                },
+            ]
+        },
+
+        "frontdr": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama12.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -21.9,
+                    "yaw": -222,
+                    "type": "scene",
+                    "text": "Utility",
+                    "sceneId": "utility"
+                },
+                {
+                    "pitch": -16,
+                    "yaw": -137,
+                    "type": "scene",
+                    "text": "Kitchen/Dining",
+                    "sceneId": "kitchen"
+                },
+                {
+                    "pitch": -15,
+                    "yaw": -172.2,
+                    "type": "scene",
+                    "text": "Bathroom",
+                    "sceneId": "bath2"
+                },
+                {
+                    "pitch": -7.7,
+                    "yaw": -215.8,
+                    "type": "scene",
+                    "text": "Bar",
+                    "sceneId": "bar"
+                },
+            ]
+        },
+
+        "utility": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama13.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -9,
+                    "yaw": -135.5,
+                    "type": "scene",
+                    "text": "Front Door",
+                    "sceneId": "frontdr"
+                },
+                {
+                    "pitch": -8.5,
+                    "yaw": -151.9,
+                    "type": "scene",
+                    "text": "Kitchen/Dining",
+                    "sceneId": "kitchen"
+                },
+                {
+                    "pitch": -12.1,
+                    "yaw": -303,
+                    "type": "scene",
+                    "text": "Bar",
+                    "sceneId": "bar"
+                },
+            ]
+        },
+
+        "bar": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama14.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -15.8,
+                    "yaw": -150.8,
+                    "type": "scene",
+                    "text": "Utility",
+                    "sceneId": "utility"
+                },
+                {
+                    "pitch": -15.7,
+                    "yaw": -325,
+                    "type": "scene",
+                    "text": "Games Room",
+                    "sceneId": "gamesrm"
+                },
+                {
+                    "pitch": -5.5,
+                    "yaw": -358.5,
+                    "type": "scene",
+                    "text": "Boot Room",
+                    "sceneId": "bootrm"
+                },
+            ]
+        },
+
+        "gamesrm": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama15.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -15,
+                    "yaw": 6.8,
+                    "type": "scene",
+                    "text": "Bar",
+                    "sceneId": "bar"
+                },
+                {
+                    "pitch": -4.2,
+                    "yaw": -1.4,
+                    "type": "scene",
+                    "text": "Utility",
+                    "sceneId": "utility"
+                },
+                {
+                    "pitch": -8.1,
+                    "yaw": 75.6,
+                    "type": "scene",
+                    "text": "Boot Room",
+                    "sceneId": "bootrm"
+                },
+            ]
+        },
+
+        "bootrm": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama16.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -12.8,
+                    "yaw": 162.3,
+                    "type": "scene",
+                    "text": "Bar",
+                    "sceneId": "bar"
+                },
+                {
+                    "pitch": -9.2,
+                    "yaw": 25.3,
+                    "type": "scene",
+                    "text": "Back Door",
+                    "sceneId": "backdr"
+                },
+            ]
+        },
+
+        "backdr": {
+            "hfov": 90,
+            "yaw": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama17.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -9.1,
+                    "yaw": -124.1,
+                    "type": "scene",
+                    "text": "Boot Room",
+                    "sceneId": "bootrm"
                 },
             ]
         },
