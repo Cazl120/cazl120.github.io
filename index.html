@@ -19,13 +19,13 @@
 <script>
 pannellum.viewer('panorama', {   
     "default": {
-        "firstScene": "outfrnt",
+        "firstScene": "drive",
         "sceneFadeDuration": 600,
 	"autoLoad": true,
     "friction": 0.11,
 	//"autoRotate": 2,
 	//"autoRotateInactivityDelay": 30000,
-    //"hotSpotDebug": true,
+    "hotSpotDebug": true,
     //"compass": true,
     },
 
@@ -190,6 +190,13 @@ pannellum.viewer('panorama', {
                     "text": "Deck",
                     "sceneId": "deck3"
                 },
+                {
+                    "pitch": -6,
+                    "yaw": 130,
+                    "type": "scene",
+                    "text": "Dome",
+                    "sceneId": "dome"
+                },
             ]
         },
 
@@ -223,6 +230,20 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Deck",
                     "sceneId": "deck3"
+                },
+                {
+                    "pitch": -10.9,
+                    "yaw": 265.5,
+                    "type": "scene",
+                    "text": "Shed",
+                    "sceneId": "shed"
+                },
+                {
+                    "pitch": -6.8,
+                    "yaw": 87.8,
+                    "type": "scene",
+                    "text": "Dome",
+                    "sceneId": "dome"
                 },
             ]
         },
@@ -279,6 +300,34 @@ pannellum.viewer('panorama', {
                     "text": "Bedroom",
                     "sceneId": "bed2"
                 },
+                {
+                    "pitch": -5.6,
+                    "yaw": 200,
+                    "type": "scene",
+                    "text": "Dome",
+                    "sceneId": "dome"
+                },
+            ]
+        },
+
+        "dome": {
+            "hfov": 90,
+            "yaw": 5,
+            "northOffset": -120,
+	    "pitch": -15,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama23.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+		        
+                {
+                    "pitch": -2,
+                    "yaw": -12.6,
+                    "type": "scene",
+                    "text": "Deck",
+                    "sceneId": "deck1"
+                },
+                
             ]
         },
 
@@ -599,6 +648,39 @@ pannellum.viewer('panorama', {
                     "text": "Carport",
                     "sceneId": "carport"
                 },
+                {
+                    "pitch": -6.8,
+                    "yaw": 109.7,
+                    "type": "scene",
+                    "text": "Shed",
+                    "sceneId": "shed"
+                },
+            ]
+        },
+
+        "shed": {
+            "hfov": 95,
+            "yaw": 0,
+            "northOffset": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama24.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -3,
+                    "yaw": -42.5,
+                    "type": "scene",
+                    "text": "Outside",
+                    "sceneId": "outfrnt"
+                },
+                {
+                    "pitch": -4.3,
+                    "yaw": 17.1,
+                    "type": "scene",
+                    "text": "Deck",
+                    "sceneId": "deck2"
+                },
             ]
         },
 
@@ -625,6 +707,33 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Back door",
                     "sceneId": "backdr"
+                },
+                {
+                    "pitch": -4.7,
+                    "yaw": -148.3,
+                    "type": "scene",
+                    "text": "Drive",
+                    "sceneId": "drive"
+                },
+            ]
+        },
+
+        "drive": {
+            "hfov": 90,
+            "yaw": 0,
+            "northOffset": 240,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama25.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                
+                {
+                    "pitch": -7.5,
+                    "yaw": 9.9,
+                    "type": "scene",
+                    "text": "Carport",
+                    "sceneId": "carport"
                 },
             ]
         },
@@ -711,7 +820,7 @@ pannellum.viewer('panorama', {
                 {
                     "pitch": -15,
                     "yaw": 6.8,
-                    "targetYaw": "same",
+                    "targetYaw": "sameAzimuth",
                     "type": "scene",
                     "text": "Bar",
                     "sceneId": "bar"
@@ -746,7 +855,7 @@ pannellum.viewer('panorama', {
                 {
                     "pitch": -12.8,
                     "yaw": 162.3,
-                    "targetYaw": "same",
+                    "targetYaw": "sameAzimuth",
                     "type": "scene",
                     "text": "Bar",
                     "sceneId": "bar"
@@ -785,6 +894,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Carport",
                     "sceneId": "carport"
+                },
+                {
+                    "pitch": -2.3,
+                    "yaw": 3.4,
+                    "type": "scene",
+                    "text": "Drive",
+                    "sceneId": "drive"
                 },
             ]
         },
