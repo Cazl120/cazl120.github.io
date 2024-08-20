@@ -25,7 +25,7 @@ pannellum.viewer('panorama', {
     "friction": 0.11,
 	//"autoRotate": 2,
 	//"autoRotateInactivityDelay": 30000,
-    "hotSpotDebug": true,
+    //"hotSpotDebug": true,
     //"compass": true,
     },
 
@@ -643,6 +643,13 @@ pannellum.viewer('panorama', {
                     "sceneId": "frontdr"
                 },
                 {
+                    "pitch": 0.8,
+                    "yaw": -132.6,
+                    "type": "scene",
+                    "text": "Veg Patch",
+                    "sceneId": "vegpatch"
+                },
+                {
                     "pitch": -3.5,
                     "yaw": -54.2,
                     "type": "scene",
@@ -676,11 +683,51 @@ pannellum.viewer('panorama', {
                     "sceneId": "outfrnt"
                 },
                 {
+                    "pitch": 2,
+                    "yaw": -83.5,
+                    "type": "scene",
+                    "text": "Veg Patch",
+                    "sceneId": "vegpatch"
+                },
+                {
                     "pitch": -4.3,
                     "yaw": 17.1,
                     "type": "scene",
                     "text": "Deck",
                     "sceneId": "deck2"
+                },
+            ]
+        },
+
+        "vegpatch": {
+            "hfov": 95,
+            "yaw": 0,
+            "northOffset": 0,
+	    "pitch": -10,
+            "type": "equirectangular",
+            "panorama": "https://chordbeet.co.uk/home/Panorama26.jpg",
+            //"hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -8,
+                    "yaw": -118,
+                    "type": "scene",
+                    "text": "Outside",
+                    "sceneId": "outfrnt"
+                },
+                {
+                    "pitch": -6.1,
+                    "yaw": -163.2,
+                    "type": "scene",
+                    "text": "Carport",
+                    "sceneId": "carport"
+                },
+                {
+                    "pitch": -6.6,
+                    "yaw": -90.6,
+                    "type": "scene",
+                    "text": "Shed",
+                    "sceneId": "shed"
                 },
             ]
         },
@@ -700,6 +747,13 @@ pannellum.viewer('panorama', {
                     "type": "scene",
                     "text": "Outside",
                     "sceneId": "outfrnt"
+                },
+                {
+                    "pitch": 2.1,
+                    "yaw": 91.6,
+                    "type": "scene",
+                    "text": "Veg Patch",
+                    "sceneId": "vegpatch"
                 },
                 {
                     "pitch": -7.1,
